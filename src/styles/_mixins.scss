@@ -1,0 +1,32 @@
+@mixin flex($direction: row, $align: center, $justify: center, $gap: 0px) {
+  display: flex;
+  flex-direction: $direction;
+  align-items: $align;
+  justify-content: $justify;
+  gap: $gap;
+}
+
+@mixin button($width: 40px, $height: 40px, $radius: 4px, $padding: 0) {
+  width: $width;
+  height: $height;
+  padding: $padding;
+  border: none;
+  border-radius: $radius;
+  cursor: pointer;
+  font-family: "Noto Sans", sans-serif;
+}
+
+@mixin color-scheme($color) {
+  color: $color;
+  background-color: $color;
+  transition: background-color 0.5s;
+
+  .quote-button,
+  .icon {
+    background-color: $color;
+    box-shadow: 0px 2px 8px -2px darken($color: $color, $amount: 5);
+    &:hover {
+      background-color: lighten($color: $color, $amount: 5);
+    }
+  }
+}

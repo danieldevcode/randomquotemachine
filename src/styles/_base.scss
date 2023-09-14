@@ -1,0 +1,22 @@
+@use "fonts";
+@import "_mixins";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 16px;
+  height: 100vh;
+}
+
+#root {
+  height: 100%;
+}
+
+#root {
+  @include flex();
+}

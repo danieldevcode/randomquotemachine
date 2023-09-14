@@ -1,0 +1,42 @@
+@import "_mixins";
+@import "_variables";
+
+.theme-1 {
+  @include color-scheme($theme-color-1);
+}
+
+.theme-2 {
+  @include color-scheme($theme-color-2);
+}
+
+.theme-3 {
+  @include color-scheme($theme-color-3);
+}
+
+.theme-4 {
+  @include color-scheme($theme-color-4);
+}
+
+.theme-5 {
+  @include color-scheme($theme-color-5);
+}
+
+.theme-6 {
+  @include color-scheme($theme-color-6);
+}
+
+.theme-7 {
+  @include color-scheme($theme-color-7);
+}
+
+.theme-8 {
+  @include color-scheme($theme-color-8);
+}
+
+.theme-9 {
+  @include color-scheme($theme-color-9);
+}
+
+.theme-10 {
+  @include color-scheme($theme-color-10);
+}
